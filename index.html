@@ -5,8 +5,45 @@
     <title>KnowledgeCity</title>
     <link rel="stylesheet" href="dist/css/style.css">
   </head>
-  <body>
-    <img src="dist/img/KnowledgeCity-logo.svg" alt="KnowledgeCity Learning Solutions logo">
+  <body class="login">
+    <div class="container my-auto mx-auto d-block">
+      <div class="row">
+        <div class="col-xl-12">
+          <img src="dist/img/KnowledgeCity-logo.svg" alt="KnowledgeCity Learning Solutions logo">
+          <h1 class="mt-5">Welcome to the Learning Management System</h1>
+          <h2>Please log in to continue</h2>
+        </div>
+      </div>
+      <form id="login" class="mt-5 mb-5">
+        <div class="row mb-4">
+          <div class="col-xl-12">
+            <label for="username">
+              <img src="./dist/img/user.svg" alt="Username icon" />
+            </label>
+            <input type="text" name="username" placeholder="Username">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <label for="password">
+              <img src="./dist/img/password.svg" alt="Password icon" />
+            </label>
+            <input type="password" name="password" placeholder="Password" />
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-xl-12 remember_me">
+            <input type="checkbox" name="remember_me" />
+            <label for="remember_me">Remember Me</label>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-xl-12">
+            <button type="submit"><span>Log In</span><span><i class="fas fa-chevron-right"></i></span></button>
+          </div>
+        </div>
+      </form>
+    </div>
     <script src="dist/js/all.js"></script>
   </body>
 </html>

@@ -14,14 +14,13 @@ const clean = require('gulp-clean');
 const rename = require("gulp-rename");
 const order = require("gulp-order");
 
-const isProd = process.env.NODE_ENV === 'dev';
 
 // Copy fonts to fonts directory
 function fonts() {
   return gulp.src([
     "./node_modules/@fortawesome/fontawesome-free/webfonts/*"
   ])
-  .pipe(gulp.dest("./fonts/")); 
+  .pipe(gulp.dest("./dist/webfonts/")); 
 }
 
 // Compile SCSS into minified CSS
