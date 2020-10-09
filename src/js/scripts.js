@@ -3,12 +3,12 @@ console.log('scripts loaded!');
 // var formDataJson = toJSONString(document.getElementById("job_search_form"));
 
 $.ajax({ 
-  type: 'POST', 
-  url: 'http://localhost/knowledgecity/auth/',
-  // data: {
-  //   action: 'get_jobs',
-  //   form_data: formDataJson
-  // },
+  type: 'GET', 
+  url: 'http://localhost/knowledgecity/users/',
+  data: {
+    action: 'get_jobs',
+    form_data: formDataJson
+  },
   dataType: 'json',
   cache: false
 })

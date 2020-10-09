@@ -2,25 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>KnowledgeCity</title>
-    <link rel="stylesheet" href="dist/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | KnowledgeCity</title>
+    <link rel="stylesheet" href="./dist/css/style.css">
   </head>
   <body class="login">
     <div class="container my-auto mx-auto d-block">
       <div class="row">
         <div class="col-xl-12">
-          <img src="dist/img/KnowledgeCity-logo.svg" alt="KnowledgeCity Learning Solutions logo">
+          <img class="logo" src="./dist/img/KnowledgeCity-logo.svg" alt="KnowledgeCity Learning Solutions logo">
           <h1 class="mt-5">Welcome to the Learning Management System</h1>
           <h2>Please log in to continue</h2>
         </div>
       </div>
-      <form id="login" class="mt-5 mb-5">
+      <form id="login" class="mt-5 mb-5" action="./users/">
         <div class="row mb-4">
           <div class="col-xl-12">
             <label for="username">
               <img src="./dist/img/user.svg" alt="Username icon" />
             </label>
-            <input type="text" name="username" placeholder="Username">
+            <input type="text" name="username" placeholder="Username" required="true" />
           </div>
         </div>
         <div class="row">
@@ -28,12 +29,12 @@
             <label for="password">
               <img src="./dist/img/password.svg" alt="Password icon" />
             </label>
-            <input type="password" name="password" placeholder="Password" />
+            <input type="password" name="password" placeholder="Password" required="true" />
           </div>
         </div>
         <div class="row mt-4">
           <div class="col-xl-12 remember_me">
-            <input type="checkbox" name="remember_me" />
+            <input type="checkbox" name="remember_me" required="true" />
             <label for="remember_me">Remember Me</label>
           </div>
         </div>
@@ -44,6 +45,6 @@
         </div>
       </form>
     </div>
-    <script src="dist/js/all.js"></script>
+    <script src="./dist/js/all.js"></script>
   </body>
 </html>
